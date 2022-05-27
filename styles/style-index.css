@@ -1,0 +1,159 @@
+
+/* MODIFICACIONES AL WEBKIT */
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: gray;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#229954;
+    border-radius: 10px;
+}
+
+/*Declaracion de variables */
+/* Colores principales */
+:root{
+    --background-color-500: #0d1d31;
+    --background-color-600: #1B3352;
+    --background-color-900: #0c0d13;
+    --green-icon: #35CC2E;
+    --comunica-color: #4080ee;
+    --logo-color: #01FB21;
+}
+/* Degradados y radiales */
+:root{
+    --background-color-radial: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    --backgroun-secondary-color-radial: radial-gradient(ellipse at bottom, #1f72db 0%, #3f58ef 100%);
+}
+
+/*Selectores Container, body y HTML */
+
+/* Scrool behavior (activar en google) */
+html{
+    scroll-behavior: smooth ;
+}
+/*Color del cuerpo */
+body{
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+
+}
+
+/*SELECTORES UNIVERSALES */
+
+/*Links*/
+
+a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+/* Selectores H1,H3,H4 */
+
+h1,h3,h4{
+    font-family: 'Radio Canada', sans-serif;
+    color: #fff;
+}
+
+
+/* TITULO */
+
+.container_title{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 54vh;
+    top: 18vh;
+    font-size: 30px;
+}
+
+.neonText {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    left: 11vh;
+    text-shadow: 0 0 10px var(--logo-color);
+    position: absolute;
+    top: 38vh;
+    display: none;
+    opacity: 0;
+  }
+
+.title r{
+    transition: 1s;
+}
+.title r:hover{
+    color: var(--comunica-color);
+    transition: 1s;
+}
+.description w {
+    color: var(--green-icon);
+}
+.title{
+    position: relative;
+    color: #fff;
+}
+
+.description{
+    position: relative;
+    bottom: 4vh;
+    display: inline-block;
+}
+.img__title{
+    width: 98px;
+    left: 36vh;
+    top: 57vh;
+    position: absolute;
+    animation-name: down-button;
+    animation-duration: 1s;
+    animation-delay: 2s;
+}
+
+.container_about-me{
+    padding: 150px;
+    padding-left: 80px;
+    position: relative;
+    top: 111vh;
+}
+.about-me__text{
+    font-family: 'Zen Loop', cursive;
+    font-size: 50px;
+    color: #fff;
+    margin-right: 50vh;
+    position: absolute;
+    bottom: 45vh;
+}
+.img__about-me{
+    position: relative;
+    left: 120vh;
+    top: 5vh;
+}
+
+
+
+/* Animaciones */
+
+@keyframes down-button {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+/*
+    Designer: rcomunica
+    Archive: style-index.css
+    For: index.php
+    Last date for Update: 27 - MAY - 2022
+    Documentacion del codigo: 27 - MAY - 2022
+    
+
+    NOTES: Al momento falta diseñar el NAV lateral este se espera
+    realizar el 28 - MAY - 2022 tambien a si mismo se modificara
+    el archivo index.php
+*/
