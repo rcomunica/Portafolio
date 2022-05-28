@@ -70,7 +70,7 @@ h1,h3,h4{
     display: inline-block;
     text-align: center;
     position: relative;
-    left: 54vh;
+    left: 27%;
     top: 18vh;
     font-size: 30px;
 }
@@ -108,7 +108,7 @@ h1,h3,h4{
 }
 .img__title{
     width: 98px;
-    left: 36vh;
+    left: 40%;
     top: 57vh;
     position: absolute;
     animation-name: down-button;
