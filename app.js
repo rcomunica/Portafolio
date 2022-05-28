@@ -5,12 +5,12 @@ var time = 2000
 
 function AparecerNeon(){
     if(TextNeon.style.display="none"){
-        settimeout(function(){
+        setTimeout(function(){
             TextNeon.style.transition="opacity 0.8s ease 1s";
             TextNeon.style.display="block"
         }, time)
         
-        settimeout(function(){
+        setTimeout(function(){
             TextNeon.style.opacity="1"
             console.log("En", time, "se inicio el text neon y en", time+500, "se termino")
         }, time+500)

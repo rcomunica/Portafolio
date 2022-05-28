@@ -70,8 +70,7 @@ h1,h3,h4{
     display: inline-block;
     text-align: center;
     position: relative;
-    left: 27%;
-    top: 18vh;
+    top: 14vh;
     font-size: 30px;
 }
 
@@ -98,17 +97,13 @@ h1,h3,h4{
 }
 .title{
     position: relative;
+    top: 10px;
     color: #fff;
 }
 
-.description{
-    position: relative;
-    bottom: 4vh;
-    display: inline-block;
-}
 .img__title{
     width: 98px;
-    left: 40%;
+    left: 41%;
     top: 57vh;
     position: absolute;
     animation-name: down-button;
