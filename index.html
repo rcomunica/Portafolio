@@ -3,6 +3,7 @@
 <head>
 	<title>rcomunica - Portafolio</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Vinculaciones -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +18,27 @@
 
 
 	<div class="container">
-		<div class="container_nav" id="container_nav">
+
+		<input type="checkbox" id="btn-menu">	
+	<div class="btn-menu">
+		<label for="btn-menu" class="fa-solid fa-bars"></label>
+	</div>
+	<div class="container-menu">
+		<div class="cont-menu">
+			<nav>
+				<a href="#sobre-mi"><i class="fa-solid fa-user"></i> Sobre mi</a>
+				<a href="#lenguajes"><i class="fa-solid fa-code"></i> Lenguajes</a>
+				<a href="#portafolio"><i class="fa-solid fa-book"></i> Portafolio</a>
+				<a href="#contactame"><i class="fa-solid fa-message"></i> Contacto</a>
+				<a href="#redes"><i class="fa-solid fa-share-nodes"></i> Redes sociales</a>
+			</nav>
+			<label for="btn-menu" class="fa-solid fa-xmark"></label>
 		</div>
+	</div>
+
+
+
+
 		<center>
 			<div class="container_title">
 				<h1 class="title">Hola! soy <r>rcomunica</r> y</h1>
@@ -30,9 +50,11 @@
 				<h2 class="neonText" id="neonText">Da click en mi logo</h2>
 			</div>
 		</center>
-		<div class="container_about-me">
-			<p class="about-me__text" id="sobre-mi">Soy un desarollador Front-end, con muy poca experencia laboral pero con suficientes conocimientos para crear. Y aunque me digan que no por mi edad o experiencia, voy a luchar por aquello que son mis sueños, me encuentro dispuesto a cualquier reto y todo lo que me pidan</p>
-			<img src="src/person.png" class="img__about-me">
+		<div class="AboutmeContainer">
+			<div class="container_about-me">
+				<p class="about-me__text" id="sobre-mi">Soy un desarollador Front-end, con muy poca experencia laboral pero con suficientes conocimientos para crear. Y aunque me digan que no por mi edad o experiencia, voy a luchar por aquello que son mis sueños, me encuentro dispuesto a cualquier reto y todo lo que me pidan</p>
+				<img src="src/person.png" class="img__about-me">
+			</div>
 		</div>
 	</div>
 </body>
@@ -51,5 +73,11 @@
 				}
 			}	
 	</script>
+
+
 -->
+
+
+
+
 </html>

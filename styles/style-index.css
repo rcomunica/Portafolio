@@ -33,13 +33,9 @@
 
 /*Selectores Container, body y HTML */
 
-/* Scrool behavior (activar en google) */
-html{
-    scroll-behavior: smooth ;
-}
 /*Color del cuerpo */
 body{
-    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    background: var(--background-color-900);
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -63,6 +59,94 @@ h1,h3,h4{
     color: #fff;
 }
 
+/* NAV */
+
+
+
+.btn-menu{
+    color: #fff;
+    float: left;
+    line-height: 80px;
+    position: absolute;
+    left: 3%;
+    font-size: 25px;
+
+}
+
+
+#btn-menu{
+    display: none;
+}
+
+.container-menu{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background-color: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+
+
+.cont-menu nav{
+    transform: translateY(15%);
+
+}
+
+.cont-menu nav a{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background-color: #1f1f1f;
+}
+
+.cont-menu nav a:hover{
+    color: var(--green-icon);
+}
+
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    color: white;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn-menu label{
+    cursor: pointer;
+}
+
+
 
 /* TITULO */
 
@@ -77,23 +161,20 @@ h1,h3,h4{
 .neonText {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    left: 11vh;
-    text-shadow: 0 0 10px var(--logo-color);
-    position: absolute;
-    top: 38vh;
     display: none;
     opacity: 0;
+    text-shadow: 0 0 10px var(--logo-color);
   }
 
 .title r{
     transition: 1s;
 }
 .title r:hover{
-    color: var(--comunica-color);
+    color: var(--logo-color);
     transition: 1s;
 }
 .description w {
-    color: var(--green-icon);
+    color: var(--comunica-color);
 }
 .title{
     position: relative;
@@ -103,9 +184,6 @@ h1,h3,h4{
 
 .img__title{
     width: 98px;
-    left: 41%;
-    top: 57vh;
-    position: absolute;
     animation-name: down-button;
     animation-duration: 1s;
     animation-delay: 2s;
