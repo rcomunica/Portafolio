@@ -1,6 +1,6 @@
 
 var TextNeon = document.getElementById('neonText')
-var time = 9500
+var time = 2500
 
 
 function AparecerNeon(){

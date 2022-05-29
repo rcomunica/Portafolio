@@ -20,7 +20,7 @@
 :root{
     --background-color-500: #0d1d31;
     --background-color-600: #1B3352;
-    --background-color-900: #0c0d13;
+    --background-color-900: #161616;
     --green-icon: #35CC2E;
     --comunica-color: #4080ee;
     --logo-color: #01FB21;
@@ -189,26 +189,31 @@ h1,h3,h4{
     animation-delay: 2s;
 }
 
-.container_about-me{
-    padding: 150px;
-    padding-left: 80px;
-    position: relative;
-    top: 111vh;
-}
-.about-me__text{
+/* About me */
+
+.AboutmeContainer{
     font-family: 'Zen Loop', cursive;
-    font-size: 50px;
-    color: #fff;
-    margin-right: 50vh;
+    color: white;
+    font-size: 35px;
     position: absolute;
-    bottom: 45vh;
-}
-.img__about-me{
-    position: relative;
-    left: 120vh;
-    top: 5vh;
+    top: 100vh;
+    left: 0;
+    width: 100%;height: 100%;
+    background-color: #161616;
 }
 
+.about-me__text{
+    padding-left: 15px;
+    padding-right: 35%;
+    position: relative;
+    top: 15px;
+}
+
+.img__about-me{
+    position: relative;
+    left: 80%;
+    bottom: 30px;
+}
 
 
 /* Animaciones */
@@ -222,11 +227,10 @@ h1,h3,h4{
     Designer: rcomunica
     Archive: style-index.css
     For: index.php
-    Last date for Update: 27 - MAY - 2022
-    Documentacion del codigo: 27 - MAY - 2022
+    Last date for Update: 29 - MAY - 2022
+    Documentacion del codigo: 29 - MAY - 2022
     
 
-    NOTES: Al momento falta diseñar el NAV lateral este se espera
-    realizar el 28 - MAY - 2022 tambien a si mismo se modificara
-    el archivo index.php
+    NOTES: Se termino de crear el NAV ahora falta terminar de 
+    crear la pagina al momento TODO NICE!
 */
