@@ -5,7 +5,7 @@
   > Este repositorio sea ha creado para llevar un manejo de trabajos que llevo y que he logrado 
 
 ## Pagina
-  > [Pagina donde encontraras todo (HTML)](https://rcomunica.github.io/Portafolio/)
+  > [Pagina donde encontraras todo (HTML)](https://rcomunica.github.io/Portafolio/index)
 
 ## Pre-requisitos 📋
  - Ninguno
