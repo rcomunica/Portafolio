@@ -1,9 +1,11 @@
-# Portafolio de rcomunica edición BETA
-
+# Portafolio by rcomunica edición BETA
 
 ### Comenzando beta 🚀
  
   > Este repositorio sea ha creado para llevar un manejo de trabajos que llevo y que he logrado 
+
+## Pagina
+  > [Pagina donde encontraras todo (HTML)](https://rcomunica.github.io/Portafolio/)
 
 ## Pre-requisitos 📋
  - Ninguno
@@ -20,8 +22,6 @@
 - [ ] Crear el menu redes sociales
 - [ ] Correguir BUGS
 
-## Pagina
-  > [Pagina donde encontraras todo (HTML)](https://rcomunica.github.io/Portafolio/)
 ## Autores ✒️
   
   - **rcomunica** - _Programacion y documentacion_ - [rcomunica](https://github.com/rcomunica)
