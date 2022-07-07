@@ -1,117 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>rcomunica - Portafolio</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Vinculaciones -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Patrick+Hand&family=Radio+Canada:wght@300&family=Zen+Loop&display=swap" rel="stylesheet">
+	<title>rcomunica - Inicio</title>
+   	<meta charset="utf-8">
+	<link rel="icon" type="icon" href="src/onlylogo.ico">
 	<link rel="stylesheet" type="text/css" href="styles/style-index.css">
-	<link rel="icon" type="icon" href="src/OnlyLogo.ico">
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/03b0ac721b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:ital,wght@1,200&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
 </head>
+
+<script src="https://kit.fontawesome.com/03b0ac721b.js" crossorigin="anonymous"></script>
+
 <body>
 
+	<div class="container body all" id="container body all">
 
+        <div class="help-container" id="help-container" >
+            <span class="help-container__icon"><i class="fa-solid fa-arrow-left"></i></span>
+            <span class="help-container__span">more details</span>
+        </div>
 
-	<div class="container">
+        <input type="checkbox" id="btn-menu">	
+        <div class="btn-menu">
+            <label for="btn-menu" class="fa-solid fa-bars"></label>
+        </div>
+        <div class="container-menu" id="container-menu">
+            <label for="btn-menu" class="btn-close">.</label>
+            <div class="cont-menu">
+                <nav>
+                    <a href="pages/about-me.html"><i class="fa-solid fa-user"></i> about me</a>
+                    <a href="pages/codes.html"><i class="fa-solid fa-code"></i> Codes</a>
+                    <a href="pages/briefcase.html"><i class="fa-solid fa-book"></i> Briefcase</a>
+                    <a href="pages/contact.html"><i class="fa-solid fa-message"></i> Contact</a>
+                    <a href="pages/social.html"><i class="fa-solid fa-share-nodes"></i> Follow Me</a>
+                </nav>
+                <label for="btn-menu" class="fa-solid fa-xmark"></label>
+            </div>
+        </div>
 
-		<input type="checkbox" id="btn-menu">	
-	<div class="btn-menu">
-		<label for="btn-menu" class="fa-solid fa-bars"></label>
-	</div>
-	<div class="container-menu" id="container-menu">
-		<label for="btn-menu" class="btn-close">.</label>
-		<div class="cont-menu">
-			<nav>
-				<a href="#sobre-mi"><i class="fa-solid fa-user"></i> Sobre mi</a>
-				<a href="#lenguajes"><i class="fa-solid fa-code"></i> Lenguajes</a>
-				<a href="#portafolio"><i class="fa-solid fa-book"></i> Portafolio</a>
-				<a href="#contactame"><i class="fa-solid fa-message"></i> Contacto</a>
-				<a href="#redes"><i class="fa-solid fa-share-nodes"></i> Redes sociales</a>
-			</nav>
-			<label for="btn-menu" class="fa-solid fa-xmark"></label>
+		<div class="title-container">
+			<span class="title-container__span">Hi everybody!</span>
+			<div class="typewriter-effect">
+                <div class="text" id="typewriter-text">My name is Julian R.</div>
+              </div>
+			<h3 class="title-container__h3">i am developer & webmaster</h3>
 		</div>
+
+        <div class="profile-container">
+            <a href="https://github.com/rcomunica" target="_blank" class="profile-container__a"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com/rcomunica_v2" target="_blank" class="profile-container__a"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com/rcomunicaofc" target="_blank" class="profile-container__a"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/rcomunica_ofici" target="_blank" class="profile-container__a"><i class="fa-brands fa-twitter"></i></a>
+            <a href="mailto:julir2772@gmail.com?subject=Hola Julian estoy interesado en tus servicios!&body=Hola Julian Andres he estado viendo tu Portafolio y estoy interesado en tus servicios... cuéntame mas de ti o cuando podemos agendar una reunión!" target="_blank" class="profile-container__a"><i class="fa-solid fa-envelope"></i></a>
+
+        </div>
+        <div>
+            
+        </div>
 	</div>
-		<center>
-			<div class="container_title">
-				<h1 class="title">Hola! soy <r>rcomunica</r> y</h1>
-				<div class="container_description">
-				<h3 class="description"><i>soy desarrollador</i><w> WEB</w>
-				<h4 style="position: relative;bottom: 20px" >y este es mi portafolio</h4>
-				</div>
-				<a href="#sobre-mi"><img src="src/OnlyLogo.jpg" class="img__title" width="80px"></a>
-				<h2 class="neonText" id="neonText">Da click en mi logo</h2>
-			</div>
-		</center>
-		
-		<div class="AboutmeContainer">
-			<label id="sobre-mi"></label>
-			<div class="container_about-me">
-				<p class="about-me__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia consectetur totam dolore saepe et autem obcaecati eum? Dolores, tempora dolore architecto exercitationem consequuntur nulla quod magnam blanditiis aspernatur id.</p>
-				<img src="src/person.png" class="img__about-me">
-			</div>
-		</div>
-<center>
-		<div class="code-container">
-			<h3 class="leng__title" id="lenguajes" >Lenguajes</h3>
 
-			<div class="code__fronted-div">
+    <script>
+        const typeWriter = document.getElementById("typewriter-text");
+        const text = "My name is <b> Julian R. </b>";
+        
+        typeWriter.innerHTML = text;
+        typeWriter.style.setProperty("--characters", text.length);
 
-				<h4 class="title_frontend">Front-End</h4><br>
+        const helpcontainer = document.getElementById("help-container");
 
-				<p class="Text__lng-frend"><b>HTML5</b></p>
-				<div><img src="src/html.png" class="img__leng" width="80px"></div>
-				<p class="Text__lng-frend"><b>CSS</b></p>
-				<div><img src="src/css.png" class="img__leng" width="70px"></div>
-				<p class="Text__lng-frend"><b>JavaScript</b></p>
-				<div><img src="src/js.png" class="img__leng" width="70px"></div>
+        setInterval(function(){
+            helpcontainer.style.opacity=1
+        }, 5000);   
 
-			</div>
-			<div class="code__backend-div">
-				<h4 class="title__backend">Back-end</h4><br>
+    </script>
 
-				<p class="Text__lng-band"><b>Node.js</b></p>
-				<div><img src="src/node.png" class="img__leng-band" width="80px"></div>
-				<p class="Text__lng-band"><b>PHP</b></p>
-				<div><img src="src/PHP.png" class="img__leng-band" width="80px"></div>
-				<p class="Text__lng-band"><b>SQL</b></p>
-				<div><img src="src/SQL.png" class="img__leng-band" width="80px"></div>
-				
-			</div>
-		</div>
-	</center>
-	</div>
 </body>
-
-
-<script src="app.js"></script>
-
-<!--
-		<script type="text/javascript">
-		var NavDisplay = document.getElementById('ShowNav')
-		var ContainerNav = document.getElementById('container_nav')
-
-			function MostarNav(click){
-				if(ContainerNav.style.display="none"){
-					NavDisplay.onclick(ContainerNav.style.display="inline");
-					return;
-				}
-			}	
-	</script>
-
-
--->
-
-
-
-
-</html>
+</html>					

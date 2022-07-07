@@ -1,67 +1,13 @@
 
-/* MODIFICACIONES AL WEBKIT */
-
-/* Scrollbar */
-
-::-webkit-scrollbar{
-    width: 10px;
-}
-::-webkit-scrollbar-track{
-    background-color: gray;
-    border-radius: 15px;
-}
-::-webkit-scrollbar-thumb{
-    background-color:#229954;
-    border-radius: 10px;
-}
-
-/*Declaracion de variables */
-/* Colores principales */
-:root{
-    --background-color-500: #0d1d31;
-    --background-color-600: #1B3352;
-    --background-color-900: #161616;
-    --green-icon: #35CC2E;
-    --comunica-color: #4080ee;
-    --logo-color: #01FB21;
-}
-/* Degradados y radiales */
-:root{
-    --background-color-radial: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
-    --backgroun-secondary-color-radial: radial-gradient(ellipse at bottom, #1f72db 0%, #3f58ef 100%);
-}
-
-/*Selectores Container, body y HTML */
-
-/*Color del cuerpo */
 body{
-    background: var(--background-color-900);
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-
+    margin: 0;
+    padding: 0;
+    background-image: url("https://media.discordapp.net/attachments/752578454175875082/994693967629267044/bg2.jpg");
 }
-
-/*SELECTORES UNIVERSALES */
-
-/*Links*/
 
 a{
     text-decoration: none;
-    color: #fff;
-
 }
-
-/* Selectores H1,H3,H4 */
-
-h1,h3,h4{
-    font-family: 'Radio Canada', sans-serif;
-    color: #fff;
-}
-
-/* NAV */
-
-
 
 .btn-menu{
     color: #fff;
@@ -92,6 +38,7 @@ h1,h3,h4{
     transition: all 500ms ease;
     opacity: 0;
     visibility: hidden;
+    z-index: 100;
 }
 
 #btn-menu:checked ~ .container-menu{
@@ -107,19 +54,20 @@ h1,h3,h4{
     position: relative;
     transition: all 500ms ease;
     transform: translateX(-100%);
+    z-index: 100;
 }
 
 #btn-menu:checked ~ .container-menu .cont-menu{
     transform: translateX(0%);
+    z-index: 100;
 }
 
 
 .cont-menu nav{
     transform: translateY(15%);
-
 }
 
-.cont-menu nav a{
+.cont-menu nav > a{
     display: block;
     font-family: 'Montserrat', sans-serif;
     padding: 20px;
@@ -133,8 +81,11 @@ h1,h3,h4{
     background-color: #1f1f1f;
 }
 
-.cont-menu nav a:hover{
-    color: var(--green-icon);
+.nav__li > a:hover{
+    transition: all 200ms;
+    color: #cacaca;
+    border-bottom: 5px solid #ffffff;
+    text-shadow: 0px 0px 10px #cacaca;
 }
 
 .cont-menu label{
@@ -150,169 +101,133 @@ h1,h3,h4{
     cursor: pointer;
 }
 
-
-
-/* TITULO */
-
-.container_title{
-    display: inline-block;
-    text-align: center;
+.title-container{
     position: relative;
-    top: 14vh;
-    font-size: 30px;
+    top: 35vh;
+    z-index: 1;
 }
 
-.neonText {
-    font-family: 'Montserrat', sans-serif;
+.title-container__h1{
     color: #fff;
-    display: none;
-    opacity: 0;
-    text-shadow: 0 0 10px var(--logo-color);
+    font-size: 50px;
+    position: absolute;
+    left: 15vh;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0px 0px 10px #cacaca;
+}
+
+.title-container__h3{
+    color: #fff;
+    position: absolute;
+    left: 34vh;
+    top: 9vh;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0px 0px 10px #cacaca;
+}
+
+.title-container__span{
+    color: #fff;
+    position: absolute;
+    left: 15vh;
+    top: 2vh;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0px 0px 10px #cacaca;
+}
+
+.typewriter-effect {
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    position: absolute;
+    left: 18vh;
+    top: 5.5vh;
+    
+  }
+  
+  .typewriter-effect > .text {
+    max-width: 0;
+    animation: typing 3s steps(var(--characters));
+    animation-fill-mode: forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0px 0px 10px #cacaca;
   }
 
-.title r{
-    transition: 1s;
-}
-.title r:hover{
-    color: var(--logo-color);
-    transition: 1s;
-}
-.description w {
-    color: var(--comunica-color);
-}
-.title{
-    position: relative;
-    top: 10px;
+
+  .typewriter-effect:after {
+    content: "|";
+    font-size: 60px;
     color: #fff;
-}
+    animation: blink 1s infinite;
+    animation-timing-function: step-end;
 
-.img__title{
-    width: 98px;
-    animation-name: down-button;
-    animation-duration: 1s;
-    animation-delay: 2s;
-}
-
-/* About me */
-
-.AboutmeContainer{
-    font-family: 'Zen Loop', cursive;
-    color: white;
-    font-size: 35px;
-    position: absolute;
-    top: 100vh;
-    left: 0;
-    width: 100%;height: 100%;
-    background-color: #161616;
-}
-
-.about-me__text{
-    padding-left: 15px;
-    padding-right: 35%;
-    position: relative;
-    top: 15px;
-}
-
-.img__about-me{
-    position: relative;
-    left: 80%;
-    bottom: 30px;
-}
-
-/* Lenguajes */
-
-
-
-.code-container{
-    position: absolute;
-    background: var(--background-color-900);
-    width: 100%;
-    height: 100%;
-    top: 200vh;
-
-}
-
-.leng__title{
-    position: relative;
-    top: 15px;
-    font-size: 32px;
-    transition: 500ms;
-    display: inline;
-}
-
-.leng__title:hover{
-    color: var(--green-icon);
-    transition: 500ms;
-}
-
-.code__fronted-div, .code__backend-div{
-    border:  solid 5px;
-    border-image: linear-gradient(
-        rgb(0, 102, 255),
-        rgb(255, 0, 21)) 1;
-    background-color: #151515;
-    width: 350px;
-    position: relative;
-    height: 550px;
-    right: 20%;
-    top: 6%;
-    animation: rotate 3.5s ease-in infinite;
-}
-
-.code__backend-div{
-    left: 20%;
-    top: -518px;
-}
-
-.title_frontend, .title__backend{
-    font-size: 24px;
-    padding: 0px;
-}
-
-.Text__lng-frend, .Text__lng-band, .Text__lng-band{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-}
-
-.Text__lng-frend,
-.img__leng,
-.Text__lng-band,
-.img__leng-band{
-    position: relative;
-    bottom:  45px;
-}
-
-
-
-
-/* Animaciones */
-
-@keyframes down-button {
-    from{transform: rotate(0deg);}
-    to{transform: rotate(360deg);}
-}
-
-
-@keyframes rotate {
-    50%{
-        border-image: 
-        linear-gradient(
-            360deg,
-            rgb(0, 102, 255),
-            rgb(255, 0, 21)) 1;
+  }
+  
+  @keyframes typing {
+    75%,
+    100% {
+      max-width: calc(var(--characters) * 1ch);
     }
+  }
+  
+  @keyframes blink {
+    0%,
+    75%,
+    100% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0;
+    }
+  }
+
+
+
+  .profile-container{
+    display: inline;
+    position: relative;
+    left: 87%;
+    top: 95vh;
+  }
+
+  .profile-container__a{
+    text-decoration: none;
+    background-color: var(--comunica-color);
+    padding: 5px;
+    border-radius: 15px;
+    display: inline-block;
+    color: var(--font-color-primary);
+   }
+
+   .profile-container__a:hover{
+    transition: 100ms;
+    background-color: var(--background-color-600);
+    color: #cacaca;
+   }
+
+   .help-container{
+    position: absolute;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    left: 8%;
+    top: 4%;
+    opacity: 0;
+    transition: all 500ms;
+   }
+
+:root{
+    --background-color: #161616;
+    --shadow-color-primary: #cacaca;
+    --font-color-primary: #ffffff;
+    --background-color-500: #0d1d31;
+    --background-color-600: #1B3352;
+    --background-color-900: #161616;
+    --green-icon: #35CC2E;
+    --comunica-color: #4080ee;
+    --logo-color: #01FB21;
 }
-
-
-/*
-    Designer: rcomunica
-    Archive: style-index.css
-    For: index.php
-    Last date for Update: 29 - MAY - 2022
-    Documentacion del codigo: 29 - MAY - 2022
-    
-
-    NOTES: Se termino de crear el NAV ahora falta terminar de 
-    crear la pagina al momento TODO NICE!
-*/
