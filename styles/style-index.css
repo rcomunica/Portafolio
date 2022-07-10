@@ -9,97 +9,6 @@ a{
     text-decoration: none;
 }
 
-.btn-menu{
-    color: #fff;
-    float: left;
-    line-height: 80px;
-    position: absolute;
-    left: 3%;
-    font-size: 25px;
-
-}
-
-
-#btn-menu{
-    display: none;
-}
-
-.btn-close{
-    position: absolute;
-}
-
-.container-menu, .btn-close{
-    position: absolute;
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    transition: all 500ms ease;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 100;
-}
-
-#btn-menu:checked ~ .container-menu{
-    opacity: 1;
-    visibility: visible;
-}
-
-.cont-menu{
-    width: 100%;
-    max-width: 250px;
-    background-color: #1c1c1c;
-    height: 100vh;
-    position: relative;
-    transition: all 500ms ease;
-    transform: translateX(-100%);
-    z-index: 100;
-}
-
-#btn-menu:checked ~ .container-menu .cont-menu{
-    transform: translateX(0%);
-    z-index: 100;
-}
-
-
-.cont-menu nav{
-    transform: translateY(15%);
-}
-
-.cont-menu nav > a{
-    display: block;
-    font-family: 'Montserrat', sans-serif;
-    padding: 20px;
-    color: #c7c7c7;
-    border-left: 5px solid transparent;
-    transition: all 400ms ease;
-}
-
-.cont-menu nav a:hover{
-    border-left: 5px solid #c7c7c7;
-    background-color: #1f1f1f;
-}
-
-.nav__li > a:hover{
-    transition: all 200ms;
-    color: #cacaca;
-    border-bottom: 5px solid #ffffff;
-    text-shadow: 0px 0px 10px #cacaca;
-}
-
-.cont-menu label{
-    position: absolute;
-    right: 5px;
-    color: white;
-    top: 10px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.btn-menu label{
-    cursor: pointer;
-}
 
 .title-container{
     position: relative;
@@ -197,15 +106,17 @@ a{
 
   .profile-container__a{
     text-decoration: none;
-    background-color: var(--comunica-color);
+    background-color: var(--social-background-color);
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 100%;
     display: inline-block;
+    cursor: pointer;
     color: var(--font-color-primary);
    }
 
    .profile-container__a:hover{
     transition: 100ms;
+    cursor: pointer;
     background-color: var(--background-color-600);
     color: #cacaca;
    }
@@ -230,4 +141,6 @@ a{
     --green-icon: #35CC2E;
     --comunica-color: #4080ee;
     --logo-color: #01FB21;
+    --social-background-color: #34495e;
+    --java-color: #dbba26;
 }

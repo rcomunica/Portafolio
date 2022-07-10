@@ -1,0 +1,91 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+
+.subtitle-container{
+    position: relative;
+    margin-left: 80px;
+    padding-right: 40%;
+}
+
+.title-container__h1{
+    color: #fff;
+    text-shadow: 0px 0px 10px var(--shadow-color-primary);
+    font-family: 'Nunito', sans-serif;
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    top: 7vh;
+    font-size: 53px;
+}
+
+.subtitle-container__p > b{
+    text-shadow: 0px 0px 10px var(--shadow-color-primary);  
+}
+
+.subtitle-container__h3{
+    color: #fff; 
+    text-shadow: 0px 0px 10px var(--shadow-color-primary);  
+    font-family: 'Raleway', sans-serif;
+    font-size: 31px;
+    margin-bottom: 0px;
+}
+
+.subtitle-container__p{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+
+
+.profile-container{
+    display: inline;
+    position: relative;
+    left: 89%;
+    top: 28vh;
+  }
+
+  .profile-container__a{
+    text-decoration: none;
+    background-color: var(--social-background-color);
+    padding: 5px;
+    border-radius: 100%;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--font-color-primary);
+   }
+
+   .profile-container__a:hover{
+    transition: 100ms;
+    cursor: pointer;
+    background-color: var(--background-color-600);
+    color: #cacaca;
+   }
+
+   j{
+    text-shadow: 0px 0px 5px var(--java-color);  
+   }
+
+   ph{
+    text-shadow: 0px 0px 5px var(--php-python-color);  
+   }
+
+:root{
+    --background-color: #161616;
+    --shadow-color-primary: #cacaca;
+    --font-color-primary: #ffffff;
+    --background-color-500: #0d1d31;
+    --background-color-600: #1B3352;
+    --background-color-900: #161616;
+    --green-icon: #35CC2E;
+    --comunica-color: #4080ee;
+    --java-color: #dbba26;
+    --php-python-color: #275ae4;
+    --logo-color: #01FB21;
+    --social-background-color: #34495e;
+}
