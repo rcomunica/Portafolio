@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Horizon";
+    src: url("horizon.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Agrandir regular";
+    src: url("Agrandir-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.text-horizon {
+    font-family: "Horizon";
+}
+.text-agrandir{
+    font-family: "Agrandir regular";
+}
+
+.fiverr-button{
+    background-color: #00B22D;
+}
