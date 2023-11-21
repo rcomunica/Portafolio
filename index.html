@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
+
+    <meta
+      name="description"
+      content="Hello!, I'm Julian, I'm a software developer with 3 years of experience based in
+      Colombia. I have great interest in full-stack development, Machine
+      learning and the big world of aviation"
+    />
     <script
       src="https://kit.fontawesome.com/03b0ac721b.js"
       crossorigin="anonymous"
@@ -42,9 +49,9 @@
     </nav>
     <main class="w-full h-screen">
       <div
-        class="w-full h-full grid md:grid-cols-2 grid-cols-1 grid-row-2 items-center justify-items-center"
+        class="w-full h-full grid md:grid-cols-2 grid-cols-1 grid-row-2 items-center justify-items-end"
       >
-        <div class="info__container md:w-9/12 w-full mx-5">
+        <div class="info__container md:w-10/12 w-full mx-5">
           <div class="text__container-info text-white flex flex-col">
             <h1 class="text-horizon md:text-7xl text-5xl">
               HI, I'M <br />
@@ -69,18 +76,74 @@
               <button
                 class="text-horizon text-center fiverr-button w-52 h-16 px-5 py-2 rounded"
               >
-                <span class="text-sm">Fiverr</span>
+                <span class="text-lg">Fiverr</span>
               </button>
             </div>
           </div>
         </div>
-        <div class="image__decoration w-64 h-64">
-          <img src="computer.svg" width="100%" height="100%" alt="" />
-        </div>
+        <div class="image__decoration w-64 h-64"></div>
       </div>
       <div
-        class="w-full h-full grid grid-cols-2 grid-rows-1 items-center justify-items-end"
-      ></div>
+        class="w-full h-full grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-2 items-center justify-items-center"
+      >
+        <div class="general__container md:w-4/5 flex flex-col">
+          <div class="title__container">
+            <h2 class="text-horizon text-3xl text-justify basis-1/2">
+              <span class="text-subtitleColor">$THIS-></span>
+              WHAT IT'S ME?
+            </h2>
+          </div>
+          <div class="about-me__container">
+            <div class="text-white text-agrandir md:mt-32 mt-10">
+              <p class="text-xl text-justify">
+                I’m Julian Ramirez, with 1 year of experience how Front-end
+                developer and 2 years how back-end developer. Some languages
+                that I use are PHP ~ Java ~ Dart ~ SQL and also frameworks how
+                Laravel. I management of version control systems such as GIT and
+                Github. I have collaborated for virtual networks such as IVAO
+                and participated in the development of Micro and medium-sized
+                companies. I distinguish myself by my commitment and my good
+                teamwork.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="image__container flex justify-center">
+          <div class="md:w-2/5 w-3/5">
+            <img
+              src="JR.webp"
+              alt="Julian Ramirez profile"
+              class="rounded-full"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-full grid md:grid-col-1 md:grid-rows-4 items-center">
+        <div class="subtitleExperience__container">
+          <div class="title__container">
+            <h2 class="text-horizon text-3xl text-justify">
+              <span class="text-subtitleColor">$THIS-></span>
+              EXPERIENCE
+            </h2>
+          </div>
+        </div>
+        <div
+          class="grid row-span-3 md:grid-cols-3 md:grid-rows-1 place-items-center"
+        >
+          <div class="projects__button flex flex-col gap-5 text-agrandir">
+            <div class="bg-buttonColor w-full p-4 rounded">
+              <button class="text-left" type="button">Hatchi Colombia</button>
+            </div>
+            <div class="bg-buttonColor p-4 rounded">
+              <button type="button">IVAO Colombia</button>
+            </div>
+            <div class="bg-buttonColor p-4 rounded">
+              <button type="button">AeroFarallones</button>
+            </div>
+          </div>
+          <div class="col-span-2">2</div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
